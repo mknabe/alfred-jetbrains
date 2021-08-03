@@ -25,7 +25,7 @@ const getProjectPaths = (productPath) => {
         const application = content.application;
         const options =
           application.component &&
-          application.component["@_name"] === "RecentDirectoryProjectsManager"
+          application.component["@_name"] === "RiderRecentProjectsManager"
             ? application.component.option
             : [];
         const recentPathOptions = options.find((option) => {
